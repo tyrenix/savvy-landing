@@ -1,0 +1,29 @@
+:root {
+    --bgColor: #10161f;
+    --bgColorRGB: 16, 22, 31;
+    --bgContentColor: #1d2633;
+    --bgContentColorRGB: 29, 38, 51;
+    --bgContentInvertColor: #fff;
+    --textPrimaryColor: #ffffff;
+    --textPrimaryInvertColor: #000;
+    --textAccentColor:  #6a5acd;
+    --textSecondaryColor: #c0c0c0;
+    --textAccentGradient: linear-gradient(0deg, #6a5acd, #8573ff);
+    --borderPrimaryColor: #242e3b;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bgColor: #f9f9f9;
+        --bgColorRGB: 249, 249, 249;
+        --bgContentColor: #ffffff;
+        --bgContentColorRGB: 255, 255, 255;
+        --bgContentInvertColor: #10161f;
+        --textPrimaryColor: #000000;
+        --textPrimaryInvertColor: #fff;
+        --textAccentColor: #6a5acd;
+        --textSecondaryColor: #686868;
+        --textAccentGradient: linear-gradient(0deg, #6a5acd, #8573ff);
+        --borderPrimaryColor: #e5e5e5;
+    }    
+}  

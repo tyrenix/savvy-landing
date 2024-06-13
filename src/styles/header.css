@@ -1,0 +1,284 @@
+.headerWrapper {
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(var(--bgColorRGB), .6);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    overflow: hidden;
+    transition: .3s ease;
+}
+
+.headerWrapper > .header {
+    position: relative;
+    width: 95%;
+    height: 65px;
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerWrapper > .header > .logo {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    animation: showOpacity .6s ease;
+    text-decoration: none;
+    color: var(--textPrimaryColor);
+}
+
+.headerWrapper > .header > .logo > .img {
+    width: 45px;
+    height: 45px;
+    background-color: var(--textPrimaryColor);
+    border-radius: 25%;
+}
+
+.headerWrapper > .header > .logo > .text {
+    margin-left: 12px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.headerWrapper > .header > .logo > svg {
+    scale: 1.1;
+}
+
+.headerWrapper > .header > .links {
+    width: 100%;
+    height: 100%;
+    margin-left: 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    transition: .3s ease;
+}
+
+.headerWrapper > .menuContent > .links > a,
+.headerWrapper > .header > .links > a {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    cursor: pointer;
+    color: var(--textPrimaryColor);
+    transition: color .3s ease;
+}
+
+.headerWrapper > .header > .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    animation: showOpacity .6s ease;
+}
+
+.headerWrapper > .menuContent > .buttons > .button,
+.headerWrapper > .header > .buttons > .button {
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: var(--textPrimaryColor);
+    color: var(--textPrimaryInvertColor);
+    transition: filter .3s ease;
+}
+
+.headerWrapper > .header > .menuButton {
+    display: none;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--textPrimaryColor);
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.headerWrapper > .header > .menuButton > svg {
+    width: 26px;
+    height: 26px;
+    color: var(--textPrimaryInvertColor);
+}
+
+.headerWrapper > .line {
+    width: 95%;
+    margin-top: 5px;
+}
+
+.headerWrapper > .line::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--borderPrimaryColor);
+}
+
+.headerWrapper > .menuContent {
+    width: 95%;
+    height: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.headerWrapper > .menuContent > .links {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 5px;
+    box-sizing: border-box;
+}
+
+.headerWrapper > .menuContent > .links > a:first-child {
+    margin-top: 0;
+}
+
+.headerWrapper > .menuContent > .links > a {
+    height: 50px;
+    justify-content: flex-start;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.headerWrapper > .menuContent > .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.headerWrapper > .menuContent > .buttons > .button { 
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.headerWrapper.menu {
+    height: 100%;
+}
+
+.headerWrapper.mini.menu > .header > .logo {
+    display: flex;
+}
+
+.headerWrapper.mini {
+    position: absolute;
+}
+
+.headerWrapper.mini > .header::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    border-radius: 20px;
+    background-color: var(--borderPrimaryColor);
+}
+
+.headerWrapper.mini > .header > .logo {
+    display: none;
+}
+
+.headerWrapper.mini > .header > .links {
+    margin: 0;
+    justify-content: center;
+}
+
+.headerWrapper.mini > .header > .buttons {
+    display: none;
+}
+
+.headerWrapper.mini > .header > .menuButton {
+    margin-left: auto;
+}
+
+@keyframes showOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (hover: hover) {
+    .headerWrapper > .menuContent > .buttons > .button:hover,
+    .headerWrapper > .header > .buttons > .button:hover {
+        filter: brightness(80%);
+    }
+
+    .headerWrapper > .header > .links > a:hover {
+        color: var(--textAccentColor);
+    }
+
+    .headerWrapper > .menuContent > .links > a:hover {
+        text-decoration: underline;
+    }
+}
+
+@media (hover: none) {
+    .headerWrapper > .menuContent > .buttons > .button:active,
+    .headerWrapper > .header > .buttons > .button:active {
+        filter: brightness(80%);
+    }
+
+    .headerWrapper > .header > .links > a:active {
+        color: var(--textAccentColor);
+    }
+
+    .headerWrapper > .menuContent > .links > a:active {
+        text-decoration: underline;
+    }
+}
+
+@media (min-width: 1150px) {
+    .headerWrapper > .header {
+        width: 70%;
+    }
+}
+
+@media (max-width: 930px) {
+    .headerWrapper.mini > .header::after {
+        display: none;
+    }
+
+    .headerWrapper > .header > .links {
+        display: none;
+    }
+
+    .headerWrapper > .header > .buttons {
+        display: none;
+    }
+
+    .headerWrapper > .header > .menuButton {
+        display: flex;
+    }
+}

@@ -1,0 +1,162 @@
+{
+    "usefulLinks": {
+        "telegramBot": "https://t.me/savvyaibot?start=utm=65dacb7f47e4d7de4711b96e",
+        "helpTelegram": "https://t.me/fttttth"
+    },
+    "title": "ChatGPT for Everyone",
+    "intro": {
+        "serviceName": "Savvy",
+        "slogan": "Neural Networks in One Place"
+    },
+    "details": {
+        "description": "Savvy provides access to advanced neural networks for data analysis and task solving",
+        "links": {
+            "telegram": "Savvy on Telegram"
+        }
+    },
+    "advantages": {
+        "title": "Advantages",
+            "description": "Savvy offers a convenient way to interact with ChatGPT and many other advanced neural networks, all in one place.",
+        "skills": [
+            {
+                "title": "GPT-3.5 and GPT-4",
+                "description": "Language models GPT-3.5 and GPT-4 will assist in text and code generation, among other tasks.",
+                "image": "/images/generateText.jpeg"
+            },
+            {
+                "title": "DALL·E 3",
+                "description": "Artificial intelligence will generate an image based on a description.",
+                "image": "/images/generateImage.jpeg"
+            },
+            {
+                "title": "Summary YouTube",
+                "description": "Create a brief summary of any YouTube video by simply sending the link.",
+                "image": "/images/generateSummary.jpeg"
+            }
+        ]
+    },
+    "opportunities": {
+        "title": "Opportunities",
+        "description": "Savvy helps in solving a wide range of tasks: from explaining concepts to creating code and illustrations.",
+        "features": [
+            {
+                "title": "📝 Text Enhancement",
+                "description": "Improve any text, make it more original, generate enhanced text for any purpose"
+            },
+            {
+                "title": "📚 Study Assistance",
+                "description": "Find any information, solve tests, create essays with just one click"
+            },
+            {
+                "title": "🎨 Content Creation",
+                "description": "Generate unique images and text for any social media platform"
+            },
+            {
+                "title": "💻 Code Generation",
+                "description": "Edit and generate any code, learn new skills, and fix errors"
+            }
+        ]
+    },
+    "mechanism": {
+        "title": "How Does Savvy Work?",
+        "description": "We integrate with the paid version of GPT from OpenAI and other popular neural networks, customize them, and provide their functionality to all users."
+    },
+    "pricing": {
+        "title": "Prices",
+        "tariffs": [
+            {
+                "id": "free",
+                "title": "🏖️️️️ Free Package",
+                "description": "For those who are just starting to work with Savvy",
+                "features": [
+                    "50,000 tokens",
+                    "Valid for a week",
+                    "Access to all models",
+                    "Free refill happens weekly"
+                ],
+                "offer": {
+                    "price": "0₽ per package",
+                    "button": "Get Started"
+                }
+            },
+            {
+                "id": "starter",
+                "title": "🚀 Starter Package",
+                "description": "For those who need a bit more than the free package",
+                "features": [
+                    "300,000 tokens",
+                    "Valid for a month",
+                    "Access to all models"
+                ],
+                "offer": {
+                    "price": "109₽ per package",
+                    "button": "Get Started"
+                }
+            },
+            {
+                "id": "standard",
+                "title": "⚡️ Standard Package",
+                "description": "For those requiring daily support and optimization",
+                "features": [
+                    "1,500,000 tokens",
+                    "Valid for two months",
+                    "Access to all models"
+                ],
+                "offer": {
+                "price": "399₽ per package",
+                "button": "Get Started"
+                }
+            },
+            {
+                "id": "advanced",
+                "title": "🔥 Advanced Package",
+                "description": "For those needing to tackle serious volume of work",
+                "features": [
+                    "3,000,000 tokens",
+                    "Valid for three months",
+                    "Access to all models"
+                ],
+                "offer": {
+                    "price": "679₽ per package",
+                    "button": "Get Started"
+                }
+            }
+        ]
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "questions": [
+            {
+                "title": "How and on which version does Savvy work?",
+                "description": "Savvy is a chatbot based on the GPT-3.5 language model from OpenAI, trained on a wide range of internet texts and educational materials. Savvy may give incorrect answers to rare local queries or queries after 2021. It is recommended to verify answers' accuracy and use the model for more common questions. Additionally, Savvy also has access to GPT-4, providing higher-quality answers but with slower performance. The DALL·E 3 neural network is used for image generation. Simply ask the bot to generate an image. For creating a brief summary of a YouTube video, Savvy analyzes subtitles, condenses the main idea, and can narrate the text using OpenAI."
+            },
+            {
+                "title": "What are tokens?",
+                "description": "Resources measured in tokens are used for text processing and generation.<br/><br/>- 1 token ~= 4 characters in English<br/>- 1 token ~= 1 character in other languages<br/><br/>We provide 50,000 tokens for free. Additional tokens can be purchased in this section."
+            },
+            {
+                "title": "What happens if I exhaust the token limit?",
+                "description": "You can purchase additional tokens or wait for them to refresh (happens once a week)."
+            },
+            {
+                "title": "How are tokens consumed?",
+                "description": "<b>💭️️️️️️ Language Models</b><br/><b>1. GPT-3.5 Turbo</b><br/> - 2 generated characters ~= 1 token</br><br/><b>2. GPT-4 Turbo</b><br/> - 2 generated characters ~= 15 tokens</br> - Image 512px by 512px ~= 2,550 tokens</br><br/><b>🏞️ Image Models</b><br/><b>1. DALL·E 3</b><br/> - Image 1024×1024 = 27,000 tokens</br> - Image 1024×1792 = 54,000 tokens</br> - Image 1792×1024 = 54,000 tokens</br><br/><b>2. Kandinsky 3.0</b><br/> - 1 image = 3,000 tokens</br><br/><b>🎤 Audio Models</b><br/><b>1. Whisper</b><br/> - 1 second = 70 tokens</br><br/><b>2. TTS-1</b><br/> - 1 character = 10 tokens</br><br/><b>📝 Summary</b><br/><b>1. Summary 1.0</b><br/> - 1 minute video ~= 400 tokens"
+            },
+            {
+                "title": "Why can't I use it for free?",
+                "description": "We provide free tokens sufficient for occasional tasks and familiarizing yourself with the service. However, we cannot provide additional tokens as we utilize paid versions of OpenAI and other services."
+            },
+            {
+                "title": "What to do if there are questions or difficulties?",
+                "description": "You can contact us on <a href='https://t.me/fttttth' target='_blank'>Telegram</a> and we will help resolve your issue."
+            }
+        ]
+    },
+    "future": {
+        "title": "Immerse in the AI World",
+        "description": "Discover the endless possibilities of the future with our service that combines advanced AI technologies. Join us in shaping a harmonious tomorrow directed towards the future using artificial intelligence.",
+        "buttons": {
+            "telegram": "Savvy on Telegram"
+        }
+    } 
+}
